@@ -4,7 +4,7 @@
 
 ### What is it?
 
-Responsive image grids are one of the most common features of modern websites. SpiceWheel makes it easy to rapidly prototype different styles of grids. Here are some examples of image grids from Pinterest, Amazon, Unsplash and Banana Republic.
+Responsive image-grids are a common feature in web applications. SpiceWheel makes it easy to rapidly prototype these components. Here are some examples of image grids from Pinterest, Amazon, Unsplash and Banana Republic.
 
 ### Example Image Grids
 
@@ -27,11 +27,11 @@ Responsive image grids are one of the most common features of modern websites. S
 
 SpiceWheel is an opinionated library. If you want to use it, you need to do something that no modern front-end web developer has ever done, use HTML tables. At SpiceWheel, we prefer to call these beautiful relics SpiceRacks.
 
-Each row in a SpiceRack has information about an individual grid element. For SpiceWheel to interpret the SpiceRack correctly, the SpiceRack will need one column to hold the image that will be displayed (or an image URL), a label for the image, and optionally some additional information about the element.
+Each row in a SpiceRack has information about an individual grid element. For SpiceWheel to interpret the SpiceRack correctly, the SpiceRack will need one column to hold the image that will be displayed (or an image URL), a label for the image, and optionally, additional information about the element.
 
 * despite the trendy name, SpiceRacks are just HTML tables.
 
-Once the SpiceRack has been created, the developer can test to see if the spice rack looks like it is supposed to (in case, for instance you are dynamically creating the table by reading an array of JSON and you've formatted the JSON incorrectly).
+Once the SpiceRack has been created, the developer can test to see if the spice rack looks like it is supposed to (in case, for instance you are dynamically creating the table by reading an array of JSON and you've formatted the JSON incorrectly) by displaying the raw HTML table in the browser.
 
 After verifying that the SpiceRack has been set up correctly, the developer can then use the Spicewheel function to turn the SpiceRack into a beautiful grid, or as we like to call it, a SpiceWheel.
 
@@ -81,11 +81,14 @@ This project will be implemented with the following technologies:
 ### Implementation Schedule
 
 Day 1 (Mon 29): Finish proof-of-concept demo. Transform an html table into a responsive grid.
-  * Write SpiceWheel function: To convert an html table I will use regex to swap <td> elements for <img> and <p> elements/ or alternatively data-attributes. 
+  * Write SpiceWheel function: To convert an html table I will use regex to swap <td> elements for <img> and <p> elements/ or alternatively data-attributes.
+  * Write Simple SpiceWheel stylesheet: Will style the new html elements to be responsive grid.  Grid will be unordered list that uses bootstrap/or simply vw units in CSS.
 
 Day 2 (Tue 30): Research and collect CSS styles to add to basic library.
+  * Collect two new styles for SpiceWheel stylesheet library. Focus on non e-commerce examples.
 
 Day 3 (Wed 31): Research and collect CSS styles to add to basic library.
+  * Collect two new styles for SpiceWheel stylesheet library. Focus on e-commerce examples.
 
 Day 4 (Thu 1): Create a couple of demos using the new styles collected on Tuesday and Wednesday. As proof of product, rewrite table in FullStack project using SpiceWheel 😱
 
