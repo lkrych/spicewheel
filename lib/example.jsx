@@ -14,12 +14,8 @@ class genericGrid extends React.Component {
           <th>Label</th>
         </tr>
         <tr>
-          <td>"http://giraffe.jpeg"</td>
-          <td>"A nice giraffe"</td>
-        </tr>
-        <tr>
-          <td>"http://elephant.jpeg"</td>
-          <td>"A lovely elephant"</td>
+          <td>{this.props.image_urls}</td>
+          <td>{this.props.image_labels}</td>
         </tr>
       </table>;
     return(
