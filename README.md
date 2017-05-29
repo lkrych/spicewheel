@@ -29,6 +29,7 @@ SpiceWheel is an opinionated library. If you want to use it, you need to do some
 
 Each row in a SpiceRack has information about an individual grid element. For SpiceWheel to interpret the SpiceRack correctly, the SpiceRack will need one column to hold the image that will be displayed (or an image URL), a label for the image, and optionally, additional information about the element.
 
+![SpiceRack](https://res.cloudinary.com/heab4q3lg/image/upload/v1496085498/spicerack.png)
 * despite the trendy name, SpiceRacks are just HTML tables.
 
 Once the SpiceRack has been created, the developer can test to see if the spice rack looks like it is supposed to (in case, for instance you are dynamically creating the table by reading an array of JSON and you've formatted the JSON incorrectly) by displaying the raw HTML table in the browser.
