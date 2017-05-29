@@ -98,4 +98,4 @@ Day 5 (Fri 2): Research how to submit SpiceWheel to npm.
 
 1. Support more libraries than Bootstrap (Ex: Foundation, Gridly)
 2. Add more styles to the basic library
-3. Deploy the library to NPM so that other developers can use it!
+3. Deploy the library to npm so that other developers can use it!
