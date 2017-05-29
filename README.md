@@ -5,11 +5,18 @@
 ### What is it?
 
 Responsive image grids are one of the most common features of modern websites. SpiceWheel makes it easy to rapidly prototype different styles of grids for your website. Here are some examples of image grids from Pinterest, Amazon, Unsplash and Banana Republic.
+### Example Image Grids
 
+Pinterest:
 ![pinterest](https://res.cloudinary.com/heab4q3lg/image/upload/h_400/v1496024168/pinterest.png)
+
+Amazon:
 ![amazon](https://res.cloudinary.com/heab4q3lg/image/upload/h_400/v1496024164/amazon.png)
+
+Unsplash:
 ![unsplash](https://res.cloudinary.com/heab4q3lg/image/upload/h_400/v1496024167/unsplash.png)
-![craigslist]()
+
+Banana Republic:
 ![banana republic](https://res.cloudinary.com/heab4q3lg/image/upload/h_400/v1496024167/br.png)
 
 ### How does it work?
