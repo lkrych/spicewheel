@@ -1,0 +1,20 @@
+{
+  "name": "spicewheel",
+  "version": "1.0.0",
+  "description": "![spiceWheel](https://res.cloudinary.com/heab4q3lg/image/upload/h_600/v1496022931/spicewheel.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkrych/spicewheel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lkrych/spicewheel/issues"
+  },
+  "homepage": "https://github.com/lkrych/spicewheel#readme"
+}

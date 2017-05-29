@@ -1,25 +1,34 @@
 import React from 'react';
 import { Spicewheel } from 'spicewheel';
 
-class genericGrid extends React.Component {
+class GenericGrid extends React.Component {
   constructor(props){
     super(props);
   }
 
   render(){
     const SpiceRack =
-      <table>
-        <tr>
-          <th>Image</th>
-          <th>Label</th>
-        </tr>
-        <tr>
-          <td>{this.props.image_urls}</td>
-          <td>{this.props.image_labels}</td>
-        </tr>
-      </table>;
+    <table>
+      <tr>
+        <th>Image</th>
+        <th>Label</th>
+      </tr>
+      <tr>
+        <td>"giraffe.jpg"</td>
+        <td>{"a majestic giraffe"}</td>
+      </tr>
+      <tr>
+        <td>"hyena.jpg"</td>
+        <td>{"a mischevious hyena"}</td>
+      </tr>
+      <tr>
+        <td>"elephant.jpg"</td>
+        <td>{"an elegant elephant"}</td>
+      </tr>
+    </table>;
     return(
-      Spicewheel(SpiceRack, "modern", 3)
+      SpiceRack
     );
   }
 }
+export default GenericGrid;
