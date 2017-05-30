@@ -14,7 +14,6 @@ class SpiceWheelDetail extends React.Component {
             src={this.props.SpiceRow.image}
             className={this.props.style.detail.img + " " + this.props.row}
             />
-
         </li>
       );
     } else

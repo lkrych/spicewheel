@@ -42,7 +42,7 @@ class GenericGrid extends React.Component {
       </tbody>
     </table>;
 
-    const spicy = spiceWheel(SpiceRack, "modern", 4);
+    const spicy = spiceWheel(SpiceRack, "modern", 2);
     return(
       spicy
     );

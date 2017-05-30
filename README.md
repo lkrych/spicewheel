@@ -39,15 +39,16 @@ After verifying that the SpiceRack has been set up correctly, the developer can 
 
 ### Why are you insisting that we use this silly fossil of HTML?
 
-The purpose is two-fold. The first is that we want to make sure that the developer that is using SpiceWheel has set up their JSON in the proper format. SpiceWheel won't work if you've inputted the data into the SpiceRack incorrectly. Laying your information out in a SpiceRack ensures that you have checked that you are serving your backend information correctly. In the future we will support inputting raw JSON into the SpiceWheel, but right now, we like using SpiceRacks because they ensure consistency and because we want to make HTML tables feel like they are less alone in the world. 
+The purpose is two-fold. The first is that we want to make sure that the developer that is using SpiceWheel has set up their JSON in the proper format. SpiceWheel won't work if you've inputted the data into the SpiceRack incorrectly. Laying your information out in a SpiceRack ensures that you have checked that you are serving your backend information correctly. In the future we will support inputting raw JSON into the SpiceWheel, but right now, we like using SpiceRacks because they ensure consistency and because we want to make HTML tables feel like they are less alone in the world.
 
 ### SpiceWheel example
 
 ```
 import React from 'react';
-import { spiceWheel } from 'spicewheel';
+import {spiceWheel} from 'spice-wheel';
 
-class genericGrid extends React.Component {
+//Roll your own React Component for holding the SpiceRack
+class GenericGrid extends React.Component {
   constructor(props){
     super(props);
   }

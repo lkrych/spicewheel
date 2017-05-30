@@ -30,10 +30,11 @@ const construct = (list, cssStyle, rows) => {
   });
 
  const SpiceWheel =
-
+  <div className="wrapper">
     <ul className={ "spice-style"+ " " + style.detail.ul }>
       {SpiceRows}
-    </ul>;
+    </ul>
+  </div>;
 
 
 return SpiceWheel;
