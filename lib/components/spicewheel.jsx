@@ -1,7 +1,7 @@
 import React from 'react';
 import SpiceWheelDetail from './spicewheel_detail';
 import {fetchCSS} from '../util/spice_wheel_styles';
-import "../styles/spicesheet.scss";
+
 
 const deconstruct = (table) => {
   const headers = table.props.children[0].props.children.props.children.map(tr => tr.props.children.toLowerCase());

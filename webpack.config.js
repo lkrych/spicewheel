@@ -3,13 +3,10 @@ var path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './lib/entry.jsx',
+  entry: ['./lib/entry.jsx', './lib/styles/spicesheet.scss'],
   output: {
     filename: './bundle.js',
   },
-  plugins: [
-  new ExtractTextPlugin('lib/styles/app.css')
-  ],
   module: {
     loaders: [
       {
@@ -21,11 +18,16 @@ module.exports = {
         }
       },{
           test: /\.scss$/,
-          loader: "style!css!sass"
+          use: ExtractTextPlugin.extract({
+            use: ['css-loader', 'sass-loader']
+          })
         }
     ]
   },
   devtool: 'source-map',
+  plugins: [
+    new ExtractTextPlugin({filename:'./lib/styles/app.css'})
+  ],
   resolve: {
     extensions: ['.js', '.jsx', '*']
   }
