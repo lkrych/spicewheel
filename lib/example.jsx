@@ -16,15 +16,15 @@ class GenericGrid extends React.Component {
       </thead>
       <tbody>
         <tr>
-          <td>"giraffe.jpg"</td>
+          <td>"https://res.cloudinary.com/heab4q3lg/image/upload/v1496085887/giraffe.jpg"</td>
           <td>{"a majestic giraffe"}</td>
         </tr>
         <tr>
-          <td>"hyena.jpg"</td>
+          <td>"https://res.cloudinary.com/heab4q3lg/image/upload/v1496085888/hyena.jpg"</td>
           <td>{"a mischevious hyena"}</td>
         </tr>
         <tr>
-          <td>"elephant.jpg"</td>
+          <td>"https://res.cloudinary.com/heab4q3lg/image/upload/v1496085949/elephant.jpg"</td>
           <td>{"an elegant elephant"}</td>
         </tr>
       </tbody>
@@ -34,11 +34,20 @@ class GenericGrid extends React.Component {
     const rowInfo = rows.map(row => row.map(td => td.props.children));
     const SpiceRackObject = rowInfo.map(row => {
       return {
-        [headers[0]]: row[0],
+        [headers[0]]: row[0].replace(/\"\"/,/\"/),
         [headers[1]]: row[1]
       };
     });
     debugger;
+    const SpiceWheel =
+      <ul>
+        <li>
+          <img src={SpiceRackObject.Image}>
+          </img>
+          <p>{SpiceRackObject.Label}</p>
+        </li>
+      </ul>;
+
     return(
       SpiceRack
     );

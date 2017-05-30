@@ -37,6 +37,9 @@ Once the SpiceRack has been created, the developer can test to see if the spice 
 After verifying that the SpiceRack has been set up correctly, the developer can then use the spiceWheel function to turn the SpiceRack into a beautiful grid, or as we like to call it, a SpiceWheel.
 
 
+### Why are you insisting that we use this silly fossil of HTML?
+
+The purpose is two-fold. The first is that we want to make sure that the developer that is using SpiceWheel has set up their JSON in the proper format. SpiceWheel won't work if you've inputted the data into the SpiceRack incorrectly. Laying your information out in a SpiceRack ensures that you have checked that you are serving your backend information correctly. In the future we will support inputting raw JSON into the SpiceWheel, but right now, we like using SpiceRacks because
 
 ### SpiceWheel example
 
@@ -69,9 +72,6 @@ class genericGrid extends React.Component {
 
 ```
 
-### SpiceWheel Mockup
-![SpiceWheel demo](https://res.cloudinary.com/heab4q3lg/image/upload/v1496033313/SpiceWheeldemo.png)
-
 ### Architecture and Technologies
 
 This project will be implemented with the following technologies:
@@ -82,16 +82,16 @@ This project will be implemented with the following technologies:
 ### Implementation Schedule
 
 Day 1 (Mon 29): Finish proof-of-concept demo. Transform an html table into a responsive grid.
-  * Write SpiceWheel function: To convert an html table I will use regex to swap <td> elements for <img> and <p> elements/ or alternatively data-attributes.
+  * Write SpiceWheel function: To convert an html table I will access React Component properties.
   * Write Simple SpiceWheel stylesheet: Will style the new html elements to be responsive grid.  Grid will be unordered list that uses bootstrap/or simply vw units in CSS.
 
-Day 2 (Tue 30): Research and collect CSS styles to add to basic library.
-  * Collect two new styles for SpiceWheel stylesheet library. Focus on non e-commerce examples.
+Day 2 (Tue 30): Research and collect CSS styles to add to basic library. Start setting up SpiceWheel website.
+  * Focus on e-commerce example. Start setting up front-end site that demonstrates the functionality of spice-wheel.
 
-Day 3 (Wed 31): Research and collect CSS styles to add to basic library.
-  * Collect two new styles for SpiceWheel stylesheet library. Focus on e-commerce examples.
+Day 3 (Wed 31): Keep working on SpiceWheel website
+  * Make sure that all the relevant information is presented on the SpiceWheel site.
 
-Day 4 (Thu 1): Create a couple of demos using the new styles collected on Tuesday and Wednesday. As proof of product, rewrite table in FullStack project using SpiceWheel 😱
+Day 4 (Thu 1): Create a couple of demos using the new styles collected on Tuesday and Wednesday Present them on the site. As proof of product, rewrite table in FullStack project using SpiceWheel 😱
 
 Day 5 (Fri 2): Research how to submit SpiceWheel to npm.
 
@@ -100,3 +100,4 @@ Day 5 (Fri 2): Research how to submit SpiceWheel to npm.
 1. Support more libraries than Bootstrap (Ex: Foundation, Gridly)
 2. Add more styles to the basic library
 3. Deploy the library to npm so that other developers can use it!
+4. Support JSON usage instead of SpiceRack usage.
