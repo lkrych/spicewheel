@@ -1,7 +1,3 @@
-.jumbotron {
-  background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496167434/peppers1.jpg");
-  color: white; }
-
 .spice-style {
   display: flex;
   justify-content: space-around;
@@ -81,5 +77,36 @@
       -o-transform: scale(1.2);
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
+.jumbotron {
+  color: white;
+  margin-bottom: 0; }
+
+#header-img {
+  background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496167434/peppers1.jpg"); }
+
+#middle-img {
+  background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496175426/peppers-cropped.jpg");
+  text-align: center; }
+
+.why-spicewheel {
+  display: flex;
+  padding: 5vw;
+  flex-direction: column;
+  background-color: #DE6558; }
+  .why-spicewheel p, .why-spicewheel h2 {
+    padding-left: 20vw;
+    color: white;
+    width: 50vw; }
+
+.how-spicewheel {
+  display: flex;
+  padding: 5vw;
+  flex-direction: column;
+  background-color: #DE6558;
+  align-items: flex-end; }
+  .how-spicewheel p, .how-spicewheel h2 {
+    text-align: right;
+    color: white;
+    width: 50vw; }
 
 /*# sourceMappingURL=app.css.map*/

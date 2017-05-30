@@ -1,5 +1,7 @@
 import React from 'react';
 import {spiceWheel} from './components/spicewheel';
+
+//Roll your own React Component for holding the SpiceRack
 class GenericGrid extends React.Component {
   constructor(props){
     super(props);
@@ -42,7 +44,7 @@ class GenericGrid extends React.Component {
       </tbody>
     </table>;
 
-    const spicy = spiceWheel(SpiceRack, "modern", 2);
+    const spicy = spiceWheel(SpiceRack, "modern", 1);
     return(
       spicy
     );

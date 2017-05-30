@@ -3,7 +3,7 @@ var path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: ['./lib/entry.jsx', './lib/styles/spicesheet.scss'],
+  entry: ['./lib/entry.jsx', './lib/styles/spicesheet.scss', './lib/styles/spicewheelweb.scss'],
   output: {
     filename: './bundle.js',
   },
