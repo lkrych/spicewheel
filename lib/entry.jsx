@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+require("./styles/spicesheet.scss"); 
 
 import GenericGrid from './example';
 

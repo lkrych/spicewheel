@@ -1,7 +1,5 @@
 import React from 'react';
-
-import SpiceWheelDetail from './components/spicewheel_detail';
-
+import {spiceWheel} from './components/spicewheel';
 class GenericGrid extends React.Component {
   constructor(props){
     super(props);
@@ -31,31 +29,10 @@ class GenericGrid extends React.Component {
         </tr>
       </tbody>
     </table>;
-    const headers = SpiceRack.props.children[0].props.children.props.children.map(tr => tr.props.children.toLowerCase());
-    const rows = SpiceRack.props.children[1].props.children.map(tr => tr.props.children);
-    const rowInfo = rows.map(row => row.map(td => td.props.children));
-    const SpiceRackArray = rowInfo.map(row => {
-      console.log(row[0]);
-      console.log(row[1]);
-      return {
-        [headers[0]]: row[0],
-        [headers[1]]: row[1]
-      };
-    });
 
-    const SpiceRows = SpiceRackArray.map((spicerow,idx) => {
-      return <SpiceWheelDetail
-        SpiceRow={spicerow}
-        key={idx}/>;
-    });
-
-    const SpiceWheel =
-      <ul>
-        {SpiceRows}
-      </ul>;
-
+    const spicy = spiceWheel(SpiceRack, "modern", 1);
     return(
-      SpiceWheel
+      spicy
     );
   }
 }
