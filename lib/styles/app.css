@@ -110,4 +110,10 @@
     color: white;
     width: 50vw; }
 
+.demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw; }
+
 /*# sourceMappingURL=app.css.map*/
