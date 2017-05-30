@@ -11,7 +11,7 @@ class SpiceWheelDetail extends React.Component {
 
         <img
           src={this.props.SpiceRow.image}
-          className={this.props.style.detail.img}/>
+          className={this.props.style.detail.img + " " + this.props.row}/>
         <p
           className={this.props.style.detail.p}>
           {this.props.SpiceRow.label}</p>
