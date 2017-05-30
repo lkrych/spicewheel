@@ -34,7 +34,7 @@ class GenericGrid extends React.Component {
     const rowInfo = rows.map(row => row.map(td => td.props.children));
     const SpiceRackObject = rowInfo.map(row => {
       return {
-        [headers[0]]: row[0].replace(/\"\"/,/\"/),
+        [headers[0]]: row[0].replace(/""/,/"/),
         [headers[1]]: row[1]
       };
     });
