@@ -6,9 +6,21 @@ class SpiceWheelDetail extends React.Component {
   }
 
   render(){
+    if (this.props.cssStyle === "modern"){
+      return (
+        <li className={this.props.style.detail.li}
+            data-overlay-text={this.props.SpiceRow.label}>
+          <img
+            src={this.props.SpiceRow.image}
+            className={this.props.style.detail.img + " " + this.props.row}
+            />
+
+        </li>
+      );
+    } else
+
     return(
       <li className={this.props.style.detail.li}>
-
         <img
           src={this.props.SpiceRow.image}
           className={this.props.style.detail.img + " " + this.props.row}/>

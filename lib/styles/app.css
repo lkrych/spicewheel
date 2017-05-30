@@ -25,7 +25,8 @@
   max-height: 50vh; }
 
 .img-grid img {
-  object-fit: cover; }
+  object-fit: cover;
+  border-radius: 5px; }
 
 .img-grid .overlay-container {
   display: block;

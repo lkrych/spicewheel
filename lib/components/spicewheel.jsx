@@ -23,6 +23,7 @@ const construct = (list, cssStyle, rows) => {
   const SpiceRows = list.map((spicerow,idx) => {
     return <SpiceWheelDetail
       style={style.detail}
+      cssStyle={cssStyle}
       row={style.row}
       SpiceRow={spicerow}
       key={idx}/>;
