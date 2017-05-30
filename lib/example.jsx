@@ -20,6 +20,18 @@ class GenericGrid extends React.Component {
           <td>{"a majestic giraffe"}</td>
         </tr>
         <tr>
+          <td>{"http://res.cloudinary.com/heab4q3lg/image/upload/v1496122122/ostrich.jpg"}</td>
+          <td>{"a gross ostrich"}</td>
+        </tr>
+        <tr>
+          <td>{"https://res.cloudinary.com/heab4q3lg/image/upload/v1496122169/warthog.jpg"}</td>
+          <td>{"a hairy warthog"}</td>
+        </tr>
+        <tr>
+          <td>{"https://res.cloudinary.com/heab4q3lg/image/upload/v1496122168/lion.jpg"}</td>
+          <td>{"a glorious lion"}</td>
+        </tr>
+        <tr>
           <td>{"https://res.cloudinary.com/heab4q3lg/image/upload/v1496085888/hyena.jpg"}</td>
           <td>{"a mischevious hyena"}</td>
         </tr>
@@ -30,7 +42,7 @@ class GenericGrid extends React.Component {
       </tbody>
     </table>;
 
-    const spicy = spiceWheel(SpiceRack, "modern", 3);
+    const spicy = spiceWheel(SpiceRack, "modern", 1);
     return(
       spicy
     );
