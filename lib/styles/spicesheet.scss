@@ -1,36 +1,34 @@
-// .one-per-row {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   .img {
-//     width: 50vw
-//   }
-// }
-//
-// .two-per-row{
-//   display: flex;
-//   align-items: center;
-//   .img {
-//     width: 40vw
-//   }
-// }
-//
-// .three-per-row{
-//   display: flex;
-//   align-items: center;
-//   .img {
-//     width: 30vw
-//   }
-// }
-//
-// .four-per-row{
-//   display: flex;
-//   align-items: center;
-//   .img {
-//     width: 20vw
-//   }
-// }
+.spice-style {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.one-per-row {
+
+  width: 40vw;
+  height: 40vh;
+
+}
+
+.two-per-row{
+  width: 40vw;
+  height: 40vh;
+}
+
+.three-per-row{
+
+  width: 30vw;
+  height: 30vh;
+
+}
+
+.four-per-row{
+
+  width: 20vw;
+  height: 20vh;
+
+}
 
 .img-grid {
 
@@ -41,8 +39,7 @@
   }
   img {
     object-fit: cover;
-    width: 20vw;
-    height: 20vw;
+    max-width: 30vw;
   }
   .overlay-container {
     display: block;
