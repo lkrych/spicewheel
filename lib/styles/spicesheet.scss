@@ -1,13 +1,14 @@
+//global style, added to main ul element
 .spice-style {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
+//used to determine images per row
 .one-per-row {
   width: 60vw;
   height: 50vh;
-
 }
 
 .two-per-row{
@@ -16,17 +17,13 @@
 }
 
 .three-per-row{
-
   width: 30vw;
   height: 30vh;
-
 }
 
 .four-per-row{
-
   width: 20vw;
   height: 20vh;
-
 }
 
 //modern template
@@ -115,15 +112,16 @@
       position: relative;
       &::before {
         content: attr(data-overlay-text);
-        text-transform: capitalize;
-        text-decoration: underline;
+        text-transform: uppercase;
+        border-bottom: 2px solid white;
         font-weight: 500;
-        font: 2em/2.5em 'Segoe UI', Verdana, sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font: 2em/2.5em;
         position: absolute;
         z-index: 1;
         /*On top of parent*/
         top: 40%;
-        width: 100%;
+        width: 40%;
         text-align: center;
         color: white;
         background: Transparent;
