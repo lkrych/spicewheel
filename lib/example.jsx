@@ -9,7 +9,7 @@ class GenericGrid extends React.Component {
     this.state = {imageNumber: 6,
                   style: "modern",
                   imagesPerRow: 3,
-                  SpiceWheel: false,
+                  formSubmitted: false,
                   sampleJSON: [{ image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085887/giraffe.jpg",
                                  label: "A majestic giraffe" } ,
                                 {image: "http://res.cloudinary.com/heab4q3lg/image/upload/v1496122122/ostrich.jpg",
@@ -25,11 +25,12 @@ class GenericGrid extends React.Component {
                               };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleSelectInput = this.handleSelectInput.bind(this);
+    this.resetForm = this.resetForm.bind(this);
   }
 
   handleSubmit(e){
     e.preventDefault();
-    this.setState({SpiceWheel: true});
+    this.setState({formSubmitted: true});
   }
 
   handleSelectInput(event){
@@ -48,6 +49,13 @@ class GenericGrid extends React.Component {
         [name]: value
       });
     }
+  }
+
+  resetForm(e){
+    e.preventDefault();
+    this.setState({
+      formSubmitted: false
+    });
   }
 
   render(){
@@ -69,71 +77,80 @@ class GenericGrid extends React.Component {
         {tableRows}
       </tbody>
     </table>;
-    let SpiceWheel;
-    if(this.state.SpiceWheel){
-    //what to do here?
+    let SpiceWheel = spiceWheel(SpiceRack,
+                                this.state.style,
+                                this.state.imagesPerRow);
+    if (this.state.formSubmitted){
+      return (
+        <div className="new-spicewheel">
+          <h2>Your new SpiceWheel!</h2>
+          {SpiceWheel}
+          <a onClick={this.resetForm}><p>Create another SpiceWheel</p></a>
+        </div>
+      );
+    } else {
+      return(
+        <div className="demo">
+          <div className="demo-text">
+            <h2>SpiceWheel Demo</h2>
+            <p>
+              Welcome to the SpiceWheel demo, choose the number of images you
+              want in your grid, your style and the number of images you want
+              in your row.
+            </p>
+
+            <form onSubmit={this.handleSubmit} className="edit-spicerack-form">
+
+              <p>Total number of images in grid</p>
+              <select className="form-control"
+                value={this.state.imageNumber}
+                name="imageNumber"
+                onChange={this.handleSelectInput}>
+                <option value={6}>6</option>
+                <option value={12}>12</option>
+                <option value={18}>18</option>
+                <option value={24}>24</option>
+              </select>
+
+              <p>Style</p>
+              <select className="form-control"
+                value={this.state.style}
+                name="style"
+                onChange={this.handleSelectInput}>
+                <option value={"modern"}>Modern</option>
+                <option value={"classic"}>Classic</option>
+
+              </select>
+
+              <p>Number of images per row</p>
+              <select className="form-control"
+                value={this.state.imagesPerRow}
+                name="imagesPerRow"
+                onChange={this.handleSelectInput}>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+              <br></br>
+
+              <button className="btn btn-primary">Spice up your front-end</button>
+              <span></span>
+            </form>
+          </div>
+          <div className="demo-table-and-function">
+            <h3>SpiceWheel function </h3>
+            <p className="spice-function">
+              {`spiceWheel(SpiceRack,
+                "${this.state.style}",
+                ${this.state.imagesPerRow})`}
+            </p>
+            <h3>SpiceRack aka HTML table </h3>
+            {SpiceRack}
+          </div>
+        </div>
+      );
     }
-    return(
-      <div className="demo">
-        <div className="demo-text">
-          <h2>SpiceWheel Demo</h2>
-          <p>
-            Welcome to the SpiceWheel demo, choose the number of images you
-            want in your grid, your style and the number of images you want
-            in your row.
-          </p>
-
-          <form onSubmit={this.handleSubmit} className="edit-spicerack-form">
-
-            <p>Total number of images in grid</p>
-            <select className="form-control"
-              value={this.state.imageNumber}
-              name="imageNumber"
-              onChange={this.handleSelectInput}>
-              <option value={6}>6</option>
-              <option value={12}>12</option>
-              <option value={18}>18</option>
-              <option value={24}>24</option>
-            </select>
-
-            <p>Style</p>
-            <select className="form-control"
-              value={this.state.style}
-              name="style"
-              onChange={this.handleSelectInput}>
-              <option value={"modern"}>Modern</option>
-              <option value={"classic"}>Classic</option>
-
-            </select>
-
-            <p>Number of images per row</p>
-            <select className="form-control"
-              value={this.state.imagesPerRow}
-              name="imagesPerRow"
-              onChange={this.handleSelectInput}>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-            <br></br>
-
-            <button className="btn btn-primary">Spice up your front-end</button>
-            <span></span>
-          </form>
-        </div>
-        <div className="demo-table-and-function">
-          <h3>SpiceWheel function </h3>
-          <p className="spice-function">
-            {`spiceWheel(SpiceRack,
-              "${this.state.style}",
-              ${this.state.imagesPerRow})`}
-          </p>
-          <h3>SpiceRack aka HTML table </h3>
-          {SpiceRack}
-        </div>
-      </div>
-    );
   }
 }
 export default GenericGrid;
