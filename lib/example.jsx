@@ -70,12 +70,8 @@ class GenericGrid extends React.Component {
       </tbody>
     </table>;
     let SpiceWheel;
-    if(this.state.spiceWheel){
-      SpiceWheel = spiceWheel(SpiceRack,
-                                    this.state.style,
-                                    this.state.imagesPerRow);
-    }else{
-      SpiceWheel = <div></div>;
+    if(this.state.SpiceWheel){
+    //what to do here?
     }
     return(
       <div className="demo">
