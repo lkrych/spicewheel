@@ -30,8 +30,8 @@ const construct = (list, cssStyle, rows) => {
   });
 
  const SpiceWheel =
-  <div className="wrapper">
-    <ul className={ "spice-style"+ " " + style.detail.ul }>
+  <div className={style.detail.wrapper}>
+    <ul className={ "spice-style" + " " + style.detail.ul }>
       {SpiceRows}
     </ul>
   </div>;
