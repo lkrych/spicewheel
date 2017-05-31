@@ -109,7 +109,8 @@
   .basic-wrapper .basic-img-grid li {
     display: inline-block;
     overflow: hidden;
-    margin-bottom: 1vw; }
+    margin-bottom: 1vw;
+    font-family: 'Open Sans', sans-serif; }
   .basic-wrapper .basic-img-grid img {
     object-fit: cover; }
 .jumbotron {
