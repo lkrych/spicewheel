@@ -77,18 +77,18 @@
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
 
-.classic-wrapper {
+.minimalist-wrapper {
   margin: 0; }
-  .classic-wrapper .classic-img-grid li {
+  .minimalist-wrapper .minimalist-img-grid li {
     display: inline-block;
     overflow: hidden;
     margin-bottom: 1vw; }
-  .classic-wrapper .classic-img-grid img {
+  .minimalist-wrapper .minimalist-img-grid img {
     object-fit: cover; }
-  .classic-wrapper .classic-img-grid .classic-overlay-container {
+  .minimalist-wrapper .minimalist-img-grid .minimalist-overlay-container {
     display: block;
     position: relative; }
-    .classic-wrapper .classic-img-grid .classic-overlay-container::before {
+    .minimalist-wrapper .minimalist-img-grid .minimalist-overlay-container::before {
       content: attr(data-overlay-text);
       text-transform: uppercase;
       border-bottom: 2px solid white;

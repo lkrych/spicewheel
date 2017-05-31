@@ -95,10 +95,10 @@
   }
 }
 
-//classic template
-.classic-wrapper {
+//minimalist template
+.minimalist-wrapper {
   margin: 0;
-  .classic-img-grid {
+  .minimalist-img-grid {
     li {
       display: inline-block;
       overflow: hidden;
@@ -107,7 +107,7 @@
     img {
       object-fit: cover;
     }
-    .classic-overlay-container {
+    .minimalist-overlay-container {
       display: block;
       position: relative;
       &::before {

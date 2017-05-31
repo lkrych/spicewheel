@@ -118,7 +118,7 @@ class GenericGrid extends React.Component {
                 name="style"
                 onChange={this.handleSelectInput}>
                 <option value={"modern"}>Modern</option>
-                <option value={"classic"}>Classic</option>
+                <option value={"minimalist"}>Minimalist</option>
                 <option value={"basic"}>Basic</option>
 
               </select>
