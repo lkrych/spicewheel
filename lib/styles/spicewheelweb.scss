@@ -1,3 +1,6 @@
+body {
+
+}
 .jumbotron {
   color: white;
   margin-bottom: 0;
@@ -21,6 +24,12 @@
     img{
       width:15vw;
       height:15vw;
+
+      -webkit-animation: spin 7s linear 0s infinite reverse;
+      -moz-animation: spin 7s linear 0s infinite reverse;
+      -ms-animation: spin 7s linear 0s infinite reverse;
+      -o-animation: spin 7s linear 0s infinite reverse;
+      animation: spin 7s linear 0s infinite reverse;
     }
   }
 }
@@ -54,7 +63,52 @@
 
 .demo {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50vw
+  justify-content: space-around;
+  .demo-text{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding-left: 2vw;
+    .edit-spice-form{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .demo-table-and-function{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .spicerack {
+      background-color: #DE6558;
+      color: white;
+      padding-left: 3vw;
+    }
+    .spice-function{
+      font-family: 'Roboto', sans-serif;
+      font-size: 32px;
+      font-weight:800;
+    }
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+@-ms-keyframes spin {
+  0% {-ms-transform: rotate(360deg); }
+  100% { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin {
+  0% { -moz-transform: rotate(360deg); }
+  100% { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes spin {
+  0% { -o-transform: rotate(360deg); }
+  100% { -o-transform: rotate(0deg); }
 }

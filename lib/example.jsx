@@ -9,6 +9,7 @@ class GenericGrid extends React.Component {
     this.state = {imageNumber: 6,
                   style: "modern",
                   imagesPerRow: 3,
+                  SpiceWheel: false,
                   sampleJSON: [{ image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085887/giraffe.jpg",
                                  label: "A majestic giraffe" } ,
                                 {image: "http://res.cloudinary.com/heab4q3lg/image/upload/v1496122122/ostrich.jpg",
@@ -61,7 +62,7 @@ class GenericGrid extends React.Component {
       </tr>)
     );
     const SpiceRack =
-    <table>
+    <table className="spicerack">
       <thead>
         <tr>
           <th>Image</th>
@@ -75,52 +76,63 @@ class GenericGrid extends React.Component {
     const spicy = spiceWheel(SpiceRack, "modern", 2);
     return(
       <div className="demo">
-        <h2>SpiceWheel Demo</h2>
-        <p>
-          Welcome to the SpiceWheel demo, choose the number of images you
-          want in your grid, your style and the number of images you want
-          in your row.
-        </p>
+        <div className="demo-text">
+          <h2>SpiceWheel Demo</h2>
+          <p>
+            Welcome to the SpiceWheel demo, choose the number of images you
+            want in your grid, your style and the number of images you want
+            in your row.
+          </p>
 
-        <form onSubmit={this.handleSubmit} className="edit-spicerack-form">
+          <form onSubmit={this.handleSubmit} className="edit-spicerack-form">
 
-          <p>Number of total images in grid</p>
-          <select className="form-control"
-            value={this.state.imageNumber}
-            name="imageNumber"
-            onChange={this.handleSelectInput}>
-            <option value={6}>6</option>
-            <option value={12}>12</option>
-            <option value={18}>18</option>
-            <option value={24}>24</option>
-          </select>
+            <p>Total number of images in grid</p>
+            <select className="form-control"
+              value={this.state.imageNumber}
+              name="imageNumber"
+              onChange={this.handleSelectInput}>
+              <option value={6}>6</option>
+              <option value={12}>12</option>
+              <option value={18}>18</option>
+              <option value={24}>24</option>
+            </select>
 
-          <p>Style</p>
-          <select className="form-control"
-            value={this.state.style}
-            name="style"
-            onChange={this.handleSelectInput}>
-            <option value={"modern"}>Modern</option>
-            <option value={"classic"}>Classic</option>
+            <p>Style</p>
+            <select className="form-control"
+              value={this.state.style}
+              name="style"
+              onChange={this.handleSelectInput}>
+              <option value={"modern"}>Modern</option>
+              <option value={"classic"}>Classic</option>
 
-          </select>
+            </select>
 
-          <p>Number of images per row</p>
-          <select className="form-control"
-            value={this.state.imagesPerRow}
-            name="imagesPerRow"
-            onChange={this.handleSelectInput}>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
+            <p>Number of images per row</p>
+            <select className="form-control"
+              value={this.state.imagesPerRow}
+              name="imagesPerRow"
+              onChange={this.handleSelectInput}>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+            <br></br>
 
-
-          <button className="btn btn-primary">Spice up this Safari</button>
-          <span></span>
-        </form>
-        {SpiceRack}
+            <button className="btn btn-primary">Spice up your front-end</button>
+            <span></span>
+          </form>
+        </div>
+        <div className="demo-table-and-function">
+          <h3>SpiceWheel function </h3>
+          <p className="spice-function">
+            {`spiceWheel(SpiceRack,
+              "${this.state.style}",
+              ${this.state.imagesPerRow})`}
+          </p>
+          <h3>SpiceRack aka HTML table </h3>
+          {SpiceRack}
+        </div>
       </div>
     );
   }
