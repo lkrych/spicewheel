@@ -99,3 +99,50 @@
 }
 
 //classic template
+.classic-wrapper {
+  margin: 0;
+  .classic-img-grid {
+    li {
+      display: inline-block;
+      overflow: hidden;
+      margin-bottom: 1vw;
+    }
+    img {
+      object-fit: cover;
+    }
+    .classic-overlay-container {
+      display: block;
+      position: relative;
+      &::before {
+        content: attr(data-overlay-text);
+        text-transform: capitalize;
+        text-decoration: underline;
+        font-weight: 500;
+        font: 2em/2.5em 'Segoe UI', Verdana, sans-serif;
+        position: absolute;
+        z-index: 1;
+        /*On top of parent*/
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background: Transparent;
+      }
+    }
+  }
+}
+
+
+.basic-wrapper {
+  margin: 0;
+  .basic-img-grid {
+    li {
+      display: inline-block;
+      overflow: hidden;
+      margin-bottom: 1vw;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}

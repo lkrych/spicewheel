@@ -10,18 +10,18 @@ class GenericGrid extends React.Component {
                   style: "modern",
                   imagesPerRow: 3,
                   formSubmitted: false,
-                  sampleJSON: [{ image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085887/giraffe.jpg",
-                                 label: "A majestic giraffe" } ,
-                                {image: "http://res.cloudinary.com/heab4q3lg/image/upload/v1496122122/ostrich.jpg",
-                                label: "A curious ostrich"},
+                  sampleJSON: [{image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085888/hyena.jpg",
+                                label: "A confident hyena"},
                                 {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496122169/warthog.jpg",
                                 label: "A hairy warthog"},
                                 {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496122168/lion.jpg",
                                 label: "A royal lion"},
-                                {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085888/hyena.jpg",
-                                label: "A confident hyena"},
                                 {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085949/elephant.jpg",
-                                label: "An elegant elephant"}]
+                                label: "An elegant elephant"},
+                                {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496191630/bluewildebeest_nzdedf.jpg",
+                                label: "A lachrymose wildebeest"},
+                                {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496191625/mandrill_tcuqme.jpg",
+                                label: "An impetuous mandrill"}]
                               };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleSelectInput = this.handleSelectInput.bind(this);
@@ -119,6 +119,7 @@ class GenericGrid extends React.Component {
                 onChange={this.handleSelectInput}>
                 <option value={"modern"}>Modern</option>
                 <option value={"classic"}>Classic</option>
+                <option value={"basic"}>Basic</option>
 
               </select>
 
@@ -134,12 +135,13 @@ class GenericGrid extends React.Component {
               </select>
               <br></br>
 
-              <button className="btn btn-primary">Spice up your front-end</button>
+              <button className="btn btn-primary">Spice up this table</button>
               <span></span>
             </form>
           </div>
           <div className="demo-table-and-function">
-            <h3>SpiceWheel function </h3>
+            <h3 className="spice-function-title">SpiceWheel function </h3>
+            <p>This is the code you need to put in your React component!</p>
             <p className="spice-function">
               {`spiceWheel(SpiceRack,
                 "${this.state.style}",

@@ -54,10 +54,10 @@ body {
   background-color: #DE6558;
   align-items: flex-end;
   p, h2{
-    padding-right: 8vw;
+    padding-right: 3vw;
     text-align: right;
     color: white;
-    width:50vw;
+    width:52vw;
   }
 }
 
@@ -83,6 +83,9 @@ body {
       background-color: #DE6558;
       color: white;
       padding-left: 3vw;
+    }
+    .spice-function-title {
+      margin-bottom: 0.5vw;
     }
     .spice-function{
       font-family: 'Roboto', sans-serif;
