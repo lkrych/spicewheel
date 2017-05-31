@@ -32,7 +32,7 @@
 .wrapper {
   max-width: 90em;
   margin: 0;
-  .img-grid {
+  .modern-img-grid {
     li {
       display: inline-block;
       overflow: hidden;
@@ -43,7 +43,7 @@
       object-fit: cover;
       border-radius: 5px;
     }
-    .overlay-container {
+    .modern-overlay-container {
       display: block;
       position: relative;
       &::before {
@@ -76,7 +76,7 @@
         -webkit-transform: translateY(20px);
         transform: translateY(20px);
       }
-      .overlay-img {
+      .modern-overlay-img {
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
