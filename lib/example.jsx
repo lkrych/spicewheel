@@ -27,10 +27,12 @@ class GenericGrid extends React.Component {
   }
 
   handleSubmit(e){
-    e.prevent_default();
-    this.setState({
-      sampleJSON: fetchJSON(this.state)
-    });
+    e.preventDefault();
+    console.log("yup you submitted");
+    // console.log(this.state.sampleJSON.length);
+    // this.setState({
+    //   sampleJSON: fetchJSON(this.state.imageNumber)
+    // });
   }
 
   handleSelectInput(event){
@@ -38,16 +40,22 @@ class GenericGrid extends React.Component {
     const value = target.value;
     const name = target.name;
 
-    console.log(name + " " + value);
+    if (target.name === "imageNumber"){
+      this.setState({
+        [name]: value,
+        sampleJSON: fetchJSON(parseInt(value))
+      });
+    } else {
 
-    this.setState({
-      [name]: value
-    });
+      this.setState({
+        [name]: value
+      });
+    }
   }
 
   render(){
-    const tableRows = this.state.sampleJSON.map(jsonObject => (
-      <tr>
+    const tableRows = this.state.sampleJSON.map((jsonObject,idx) => (
+      <tr key={idx}>
         <td>{jsonObject.image}</td>
         <td>{jsonObject.label}</td>
       </tr>)
@@ -64,7 +72,7 @@ class GenericGrid extends React.Component {
         {tableRows}
       </tbody>
     </table>;
-    //const spicy = spiceWheel(SpiceRack, "modern", 2);
+    const spicy = spiceWheel(SpiceRack, "modern", 2);
     return(
       <div className="demo">
         <h2>SpiceWheel Demo</h2>
