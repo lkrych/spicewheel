@@ -29,11 +29,7 @@ class GenericGrid extends React.Component {
 
   handleSubmit(e){
     e.preventDefault();
-    console.log("yup you submitted");
-    // console.log(this.state.sampleJSON.length);
-    // this.setState({
-    //   sampleJSON: fetchJSON(this.state.imageNumber)
-    // });
+    this.setState({SpiceWheel: true});
   }
 
   handleSelectInput(event){
@@ -73,7 +69,14 @@ class GenericGrid extends React.Component {
         {tableRows}
       </tbody>
     </table>;
-    const spicy = spiceWheel(SpiceRack, "modern", 2);
+    let SpiceWheel;
+    if(this.state.spiceWheel){
+      SpiceWheel = spiceWheel(SpiceRack,
+                                    this.state.style,
+                                    this.state.imagesPerRow);
+    }else{
+      SpiceWheel = <div></div>;
+    }
     return(
       <div className="demo">
         <div className="demo-text">
