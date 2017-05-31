@@ -98,9 +98,9 @@
       position: absolute;
       z-index: 1;
       /*On top of parent*/
-      top: 40%;
-      width: 40%;
-      text-align: center;
+      top: 80%;
+      width: 100%;
+      text-align: left;
       color: white;
       background: Transparent; }
 
@@ -112,6 +112,18 @@
     margin-bottom: 1vw;
     font-family: 'Open Sans', sans-serif; }
   .basic-wrapper .basic-img-grid img {
+    object-fit: cover; }
+
+.e-commerce-wrapper {
+  margin: 0; }
+  .e-commerce-wrapper .basic-img-grid li {
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 1vw;
+    font-family: 'Open Sans', sans-serif; }
+  .e-commerce-wrapper .basic-img-grid li:hover {
+    cursor: pointer; }
+  .e-commerce-wrapper .basic-img-grid img {
     object-fit: cover; }
 .jumbotron {
   color: white;
