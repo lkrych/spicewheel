@@ -84,7 +84,7 @@ class GenericGrid extends React.Component {
 
         <form onSubmit={this.handleSubmit} className="edit-spicerack-form">
 
-          <p>Number of images</p>
+          <p>Number of total images in grid</p>
           <select className="form-control"
             value={this.state.imageNumber}
             name="imageNumber"
@@ -105,7 +105,7 @@ class GenericGrid extends React.Component {
 
           </select>
 
-          <p>Number of images</p>
+          <p>Number of images per row</p>
           <select className="form-control"
             value={this.state.imagesPerRow}
             name="imagesPerRow"
