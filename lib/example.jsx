@@ -46,23 +46,25 @@ class GenericGrid extends React.Component {
   }
 
   render(){
+    const tableRows = this.state.sampleJSON.map(jsonObject => (
+      <tr>
+        <td>{jsonObject.image}</td>
+        <td>{jsonObject.label}</td>
+      </tr>)
+    );
     const SpiceRack =
     <table>
       <thead>
         <tr>
           <th>Image</th>
-          <th>abel</th>
+          <th>Label</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>{this.state.sampleJSON.image}</td>
-          <td>{this.state.sampleJSON.label}</td>
-        </tr>
+        {tableRows}
       </tbody>
     </table>;
-
-    const spicy = spiceWheel(SpiceRack, "modern", 2);
+    //const spicy = spiceWheel(SpiceRack, "modern", 2);
     return(
       <div className="demo">
         <h2>SpiceWheel Demo</h2>
