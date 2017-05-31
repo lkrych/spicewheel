@@ -1,24 +1,44 @@
 import React from 'react';
-import {spiceWheel} from './components/spicewheel';
+import { spiceWheel } from './components/spicewheel';
+import { fetchJSON } from './util/example_util';
 
 //Roll your own React Component for holding the SpiceRack
 class GenericGrid extends React.Component {
   constructor(props){
     super(props);
     this.state = {imageNumber: 6,
-                  modern: "checked",
-                  classic: "",
-                  imagesPerRow: 3};
+                  style: "modern",
+                  imagesPerRow: 3,
+                  sampleJSON: [{ image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085887/giraffe.jpg",
+                                 label: "A majestic giraffe" } ,
+                                {image: "http://res.cloudinary.com/heab4q3lg/image/upload/v1496122122/ostrich.jpg",
+                                label: "A curious ostrich"},
+                                {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496122169/warthog.jpg",
+                                label: "A hairy warthog"},
+                                {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496122168/lion.jpg",
+                                label: "A royal lion"},
+                                {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085888/hyena.jpg",
+                                label: "A confident hyena"},
+                                {image: "https://res.cloudinary.com/heab4q3lg/image/upload/v1496085949/elephant.jpg",
+                                label: "An elegant elephant"}]
+                              };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSelectInput = this.handleSelectInput.bind(this);
   }
 
-  handleSubmit(){}
-
-  handleSelectInput(e){
+  handleSubmit(e){
     e.prevent_default();
+    this.setState({
+      sampleJSON: fetchJSON(this.state)
+    });
+  }
+
+  handleSelectInput(event){
     const target = event.target;
     const value = target.value;
     const name = target.name;
+
+    console.log(name + " " + value);
 
     this.setState({
       [name]: value
@@ -31,38 +51,18 @@ class GenericGrid extends React.Component {
       <thead>
         <tr>
           <th>Image</th>
-          <th>Label</th>
+          <th>abel</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>{"https://res.cloudinary.com/heab4q3lg/image/upload/v1496085887/giraffe.jpg"}</td>
-          <td>{"a majestic giraffe"}</td>
-        </tr>
-        <tr>
-          <td>{"http://res.cloudinary.com/heab4q3lg/image/upload/v1496122122/ostrich.jpg"}</td>
-          <td>{"a gross ostrich"}</td>
-        </tr>
-        <tr>
-          <td>{"https://res.cloudinary.com/heab4q3lg/image/upload/v1496122169/warthog.jpg"}</td>
-          <td>{"a hairy warthog"}</td>
-        </tr>
-        <tr>
-          <td>{"https://res.cloudinary.com/heab4q3lg/image/upload/v1496122168/lion.jpg"}</td>
-          <td>{"a glorious lion"}</td>
-        </tr>
-        <tr>
-          <td>{"https://res.cloudinary.com/heab4q3lg/image/upload/v1496085888/hyena.jpg"}</td>
-          <td>{"a mischevious hyena"}</td>
-        </tr>
-        <tr>
-          <td>{"https://res.cloudinary.com/heab4q3lg/image/upload/v1496085949/elephant.jpg"}</td>
-          <td>{"an elegant elephant"}</td>
+          <td>{this.state.sampleJSON.image}</td>
+          <td>{this.state.sampleJSON.label}</td>
         </tr>
       </tbody>
     </table>;
 
-    const spicy = spiceWheel(SpiceRack, "modern", 3);
+    const spicy = spiceWheel(SpiceRack, "modern", 2);
     return(
       <div className="demo">
         <h2>SpiceWheel Demo</h2>
@@ -78,7 +78,7 @@ class GenericGrid extends React.Component {
           <select className="form-control"
             value={this.state.imageNumber}
             name="imageNumber"
-            onChange={this.handleNumImages}>
+            onChange={this.handleSelectInput}>
             <option value={6}>6</option>
             <option value={12}>12</option>
             <option value={18}>18</option>
@@ -86,30 +86,20 @@ class GenericGrid extends React.Component {
           </select>
 
           <p>Style</p>
-          <div className="checkbox">
-            <label>
-              <input
-                type="checkbox"
-                checked={this.state.modern}
-                />
-                Modern
-            </label>
-          </div>
-          <div className="checkbox ">
-            <label>
-              <input
-                type="checkbox"
-                checked={this.state.classic}
-                />
-                Classic
-            </label>
-          </div>
+          <select className="form-control"
+            value={this.state.style}
+            name="style"
+            onChange={this.handleSelectInput}>
+            <option value={"modern"}>Modern</option>
+            <option value={"classic"}>Classic</option>
+
+          </select>
 
           <p>Number of images</p>
           <select className="form-control"
             value={this.state.imagesPerRow}
             name="imagesPerRow"
-            onChange={this.handleImagesPerRow}>
+            onChange={this.handleSelectInput}>
             <option>1</option>
             <option>2</option>
             <option>3</option>

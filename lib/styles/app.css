@@ -88,6 +88,16 @@
   background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496175426/peppers-cropped.jpg");
   text-align: center; }
 
+.header {
+  display: flex; }
+  .header .header-text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 45vw; }
+  .header .header-logo img {
+    width: 15vw;
+    height: 15vw; }
+
 .why-spicewheel {
   display: flex;
   padding: 5vw;
