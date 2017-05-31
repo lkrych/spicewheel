@@ -83,7 +83,8 @@ class GenericGrid extends React.Component {
     if (this.state.formSubmitted){
       return (
         <div className="new-spicewheel">
-          <h2>Your new SpiceWheel!</h2>
+          <h2>Your new SpiceWheel</h2>
+          <p>rendered with the {this.state.style} template!</p>
           {SpiceWheel}
           <a onClick={this.resetForm}><p>Create another SpiceWheel</p></a>
         </div>
