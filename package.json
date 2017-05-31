@@ -4,7 +4,12 @@
   "description": "![spiceWheel](https://res.cloudinary.com/heab4q3lg/image/upload/h_600/v1496022931/spicewheel.jpg)",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --w"
+    "webpack": "webpack --w",
+    "postinstall": "webpack"
+  },
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.10"
   },
   "repository": {
     "type": "git",
