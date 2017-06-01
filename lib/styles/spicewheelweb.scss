@@ -1,15 +1,19 @@
-body {
-
-}
 .jumbotron {
   color: white;
   margin-bottom: 0;
+  h1{
+    font-size: 120px;
+  }
+  p{
+    font-size: 60px;
+  }
 }
 #header-img{
   background-image:url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496167434/peppers1.jpg");
 }
+
 #middle-img{
-  background-image:url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496175426/peppers-cropped.jpg");
+  background-image:url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496282832/peppers3.jpg");
   text-align: center ;
 }
 
@@ -18,12 +22,13 @@ body {
   .header-text{
     display:flex;
     flex-direction: column;
-    padding-right: 45vw;
+    padding-right: 10vw;
   }
   .header-logo{
     img{
-      width:15vw;
-      height:15vw;
+      margin-top: 3vw;
+      width:20vw;
+      height:20vw;
 
       -webkit-animation: spin 7s linear 0s infinite reverse;
       -moz-animation: spin 7s linear 0s infinite reverse;
