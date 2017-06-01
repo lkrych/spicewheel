@@ -128,17 +128,21 @@
 .jumbotron {
   color: white;
   margin-bottom: 0; }
-  .jumbotron h1 {
-    font-size: 120px; }
-  .jumbotron p {
-    font-size: 60px; }
 
 #header-img {
   background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496167434/peppers1.jpg"); }
+  #header-img h1 {
+    font-size: 120px; }
+  #header-img p {
+    font-size: 60px; }
 
 #middle-img {
   background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496282832/peppers3.jpg");
   text-align: center; }
+  #middle-img h1 {
+    font-size: 80px; }
+  #middle-img p {
+    font-size: 40px; }
 
 .header {
   display: flex; }
@@ -155,12 +159,7 @@
     margin-top: 3vw;
     margin-right: 1vw;
     width: 20vw;
-    height: 20vw;
-    -webkit-animation: spin 7s linear 0s infinite reverse;
-    -moz-animation: spin 7s linear 0s infinite reverse;
-    -ms-animation: spin 7s linear 0s infinite reverse;
-    -o-animation: spin 7s linear 0s infinite reverse;
-    animation: spin 7s linear 0s infinite reverse; }
+    height: 20vw; }
 
 .why-spicewheel {
   display: flex;
@@ -168,9 +167,13 @@
   flex-direction: column;
   background-color: #DE6558; }
   .why-spicewheel p, .why-spicewheel h2 {
-    padding-left: 15vw;
+    padding-left: 10vw;
     color: white;
     width: 50vw; }
+  .why-spicewheel h2 {
+    font-size: 40px; }
+  .why-spicewheel p {
+    font-size: 20px; }
 
 .how-spicewheel {
   display: flex;
