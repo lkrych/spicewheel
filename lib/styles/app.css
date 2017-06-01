@@ -243,14 +243,11 @@ body {
       border-bottom: 0.5px solid white;
       margin-left: 20vw; }
   .how-spicewheel #spicewheel-example ul {
-    width: 35vw; }
-    .how-spicewheel #spicewheel-example ul li {
-      width: 15vw;
-      height: 15vw; }
-      .how-spicewheel #spicewheel-example ul li img {
-        object-fit: cover;
-        max-width: 100% !important;
-        max-height: 100% !important; }
+    width: 45vw; }
+    .how-spicewheel #spicewheel-example ul li img {
+      width: 20vw;
+      height: 20vh;
+      object-fit: contain; }
 
 .demo {
   display: flex;

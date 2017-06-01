@@ -34,7 +34,7 @@ class TechGrid extends React.Component {
     </table>;
     let SpiceWheel = spiceWheel(SpiceRack,
                                 "basic",
-                                1);
+                                4);
     return(
       <div>
         {SpiceWheel}

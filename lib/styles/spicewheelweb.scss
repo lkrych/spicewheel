@@ -152,14 +152,12 @@ body {
   }
   #spicewheel-example{
     ul {
-      width: 35vw;
+      width: 45vw;
       li{
-        width: 15vw;
-        height: 15vw;
         img{
-          object-fit: cover;
-          max-width:100% !important ;
-          max-height:100% !important ;
+          width:20vw;
+          height:20vh;
+          object-fit: contain;
         }
       }
     }

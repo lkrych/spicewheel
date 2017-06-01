@@ -8,7 +8,7 @@ class SpiceWheelDetail extends React.Component {
   render(){
     if (this.props.cssStyle === "modern" || this.props.cssStyle === "minimalist"){
       return (
-        <li className={this.props.style.detail.li}
+        <li className={this.props.style.detail.li }
             data-overlay-text={this.props.SpiceRow.label}>
           <img
             src={this.props.SpiceRow.image}
