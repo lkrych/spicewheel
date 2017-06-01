@@ -228,16 +228,10 @@ body {
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin-left: 40vw;
+    margin-left: 20vw;
     width: 45vw; }
     .how-spicewheel .how-spicewheel-text p, .how-spicewheel .how-spicewheel-text h2 {
       text-align: right;
-      color: white; }
-    .how-spicewheel .how-spicewheel-text ol {
-      list-style-position: inside;
-      text-align: right; }
-    .how-spicewheel .how-spicewheel-text li {
-      padding-right: 3vw;
       color: white; }
     .how-spicewheel .how-spicewheel-text h2 {
       font-size: 40px; }
@@ -247,7 +241,16 @@ body {
       margin-top: 3vh;
       margin-bottom: 3vh;
       border-bottom: 0.5px solid white;
-      margin-left: 36vw; }
+      margin-left: 20vw; }
+  .how-spicewheel #spicewheel-example ul {
+    width: 35vw; }
+    .how-spicewheel #spicewheel-example ul li {
+      width: 15vw;
+      height: 15vw; }
+      .how-spicewheel #spicewheel-example ul li img {
+        object-fit: cover;
+        max-width: 100% !important;
+        max-height: 100% !important; }
 
 .demo {
   display: flex;

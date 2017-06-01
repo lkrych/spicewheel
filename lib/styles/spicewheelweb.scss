@@ -131,18 +131,10 @@ body {
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin-left: 40vw;
+    margin-left: 20vw;
     width:45vw;
     p, h2{
       text-align: right;
-      color: white;
-    }
-    ol {
-      list-style-position: inside;
-      text-align: right;
-    }
-    li  {
-      padding-right: 3vw;
       color: white;
     }
     h2 {
@@ -155,7 +147,21 @@ body {
       margin-top:3vh;
       margin-bottom:3vh;
       border-bottom: 0.5px solid white;
-      margin-left: 36vw;
+      margin-left: 20vw;
+    }
+  }
+  #spicewheel-example{
+    ul {
+      width: 35vw;
+      li{
+        width: 15vw;
+        height: 15vw;
+        img{
+          object-fit: cover;
+          max-width:100% !important ;
+          max-height:100% !important ;
+        }
+      }
     }
   }
 }

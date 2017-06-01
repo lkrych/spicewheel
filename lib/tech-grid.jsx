@@ -2,9 +2,19 @@ import React from 'react';
 import { spiceWheel } from './components/spicewheel';
 import { fetchLogos } from './util/example_util';
 
-class techGrid extends React.Component {
+class TechGrid extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {sampleJSON: []};
+  }
+
+  componentDidMount(){
+    this.setState({
+      sampleJSON: fetchLogos()
+    });
+  }
   render(){
-    const tableRows = fetchLogos.map((jsonObject,idx) => (
+    const tableRows = this.state.sampleJSON.map((jsonObject,idx) => (
       <tr key={idx}>
         <td>{jsonObject.image}</td>
         <td>{jsonObject.label}</td>
@@ -24,9 +34,13 @@ class techGrid extends React.Component {
     </table>;
     let SpiceWheel = spiceWheel(SpiceRack,
                                 "basic",
-                                2);
-    return(SpiceWheel);
+                                1);
+    return(
+      <div>
+        {SpiceWheel}
+      </div>
+    );
   }
 }
 
-export default techGrid;
+export default TechGrid;
