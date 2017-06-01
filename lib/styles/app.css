@@ -185,6 +185,13 @@ body {
     height: 24vw;
     width: 45vw;
     padding-right: 3vw; }
+  .why-spicewheel .why-spicewheel-span {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    border-bottom: 0.5px solid white;
+    border-width: 15%;
+    margin-left: 5vw;
+    margin-right: 25vw; }
 
 .how-spicewheel {
   display: flex;
