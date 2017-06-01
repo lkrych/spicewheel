@@ -143,11 +143,12 @@ body {
 #middle-img {
   background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496282832/peppers3.jpg");
   text-align: center;
-  height: 60vh; }
+  height: 70vh; }
   #middle-img h1 {
     font-size: 80px; }
   #middle-img p {
-    font-size: 24px; }
+    font-size: 24px;
+    margin-bottom: 2vh; }
 
 .middle-jumbo {
   display: flex;
@@ -156,7 +157,7 @@ body {
     font: 'Lato' white;
     font-size: 32px;
     background-color: Transparent;
-    margin-top: 27vh;
+    margin-top: 34vh;
     margin-left: 40vw;
     border-color: #ffffff;
     position: absolute;
@@ -168,7 +169,7 @@ body {
   .middle-jumbo .take-me-to-demo-button::after {
     background: #ffffff;
     content: '';
-    height: 18.3vh;
+    height: 21.5vh;
     left: 50%;
     position: absolute;
     top: 100%;
@@ -179,7 +180,7 @@ body {
   .header .header-text {
     display: flex;
     flex-direction: column;
-    padding-right: 10vw; }
+    padding-right: 13vw; }
     .header .header-text .react-logo {
       display: flex; }
       .header .header-text .react-logo img {
@@ -212,8 +213,8 @@ body {
     width: 45vw;
     padding-right: 3vw; }
   .why-spicewheel .why-spicewheel-span {
-    margin-top: 3vw;
-    margin-bottom: 3vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     border-bottom: 0.5px solid white;
     border-width: 15%;
     margin-left: 5vw;
@@ -222,14 +223,31 @@ body {
 .how-spicewheel {
   display: flex;
   padding: 5vw;
-  flex-direction: column;
-  background-color: #DE6558;
-  align-items: flex-end; }
-  .how-spicewheel p, .how-spicewheel h2 {
-    padding-right: 3vw;
+  background-color: #DE6558; }
+  .how-spicewheel .how-spicewheel-text {
+    display: flex;
+    flex-direction: column;
     text-align: right;
-    color: white;
-    width: 52vw; }
+    margin-left: 40vw;
+    width: 45vw; }
+    .how-spicewheel .how-spicewheel-text p, .how-spicewheel .how-spicewheel-text h2 {
+      text-align: right;
+      color: white; }
+    .how-spicewheel .how-spicewheel-text ol {
+      list-style-position: inside;
+      text-align: right; }
+    .how-spicewheel .how-spicewheel-text li {
+      padding-right: 3vw;
+      color: white; }
+    .how-spicewheel .how-spicewheel-text h2 {
+      font-size: 40px; }
+    .how-spicewheel .how-spicewheel-text p {
+      font-size: 20px; }
+    .how-spicewheel .how-spicewheel-text .how-spicewheel-span {
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+      border-bottom: 0.5px solid white;
+      margin-left: 36vw; }
 
 .demo {
   display: flex;
