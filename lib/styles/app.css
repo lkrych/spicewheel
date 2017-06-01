@@ -224,6 +224,13 @@ body {
   display: flex;
   padding: 1vw;
   background-color: #DE6558; }
+  .how-spicewheel p, .how-spicewheel h2 {
+    text-align: right;
+    color: white; }
+  .how-spicewheel h2 {
+    font-size: 40px; }
+  .how-spicewheel p {
+    font-size: 20px; }
   .how-spicewheel .how-spicewheel-text {
     padding-top: 0;
     display: flex;
@@ -231,24 +238,24 @@ body {
     text-align: right;
     margin-left: 5vw;
     width: 45vw; }
-    .how-spicewheel .how-spicewheel-text p, .how-spicewheel .how-spicewheel-text h2 {
-      text-align: right;
-      color: white; }
-    .how-spicewheel .how-spicewheel-text h2 {
-      font-size: 40px; }
-    .how-spicewheel .how-spicewheel-text p {
-      font-size: 20px; }
     .how-spicewheel .how-spicewheel-text .how-spicewheel-span {
       margin-top: 3vh;
       margin-bottom: 3vh;
       border-bottom: 0.5px solid white;
       margin-left: 20vw; }
-  .how-spicewheel #spicewheel-example ul {
-    width: 45vw; }
-    .how-spicewheel #spicewheel-example ul li img {
-      width: 20vw;
-      height: 20vh;
-      object-fit: contain; }
+  .how-spicewheel .spicewheel-example-group {
+    display: flex;
+    flex-direction: column; }
+    .how-spicewheel .spicewheel-example-group #spicewheel-example p {
+      color: white;
+      font-size: 20px; }
+    .how-spicewheel .spicewheel-example-group #spicewheel-example ul {
+      padding-top: 2vw;
+      width: 45vw; }
+      .how-spicewheel .spicewheel-example-group #spicewheel-example ul li img {
+        width: 20vw;
+        height: 20vh;
+        object-fit: contain; }
 
 .demo {
   display: flex;
