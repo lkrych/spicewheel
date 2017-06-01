@@ -8,7 +8,7 @@
     <link rel="icon" href="./spicewheelfavicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./lib/styles/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto+Mono|Roboto"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto"  rel="stylesheet">
     <script
       src="http://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -40,9 +40,9 @@
      <div>
   </section>
   <div class="jumbotron" id="middle-img">
-    <div class="container">
+    <div class="container middle-jumbo">
       <h1>Spice up your front-end!</h1>
-      <p>Try the demo below</p>
+      <p>Increase productivity with SpiceWheel</p>
       <button class="take-me-to-demo-button"
       type="button"
       name="take-me-to-demo-button">Demo</button>
@@ -77,4 +77,10 @@
       });
     });
   })
+
+  $(".take-me-to-demo-button").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#main").offset().top},
+        'slow');
+});
 </script>
