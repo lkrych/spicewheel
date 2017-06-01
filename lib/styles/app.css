@@ -142,7 +142,8 @@ body {
 
 #middle-img {
   background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496282832/peppers3.jpg");
-  text-align: center; }
+  text-align: center;
+  height: 60vh; }
   #middle-img h1 {
     font-size: 80px; }
   #middle-img p {
