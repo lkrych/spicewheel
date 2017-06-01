@@ -222,13 +222,14 @@ body {
 
 .how-spicewheel {
   display: flex;
-  padding: 5vw;
+  padding: 1vw;
   background-color: #DE6558; }
   .how-spicewheel .how-spicewheel-text {
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin-left: 20vw;
+    margin-left: 5vw;
     width: 45vw; }
     .how-spicewheel .how-spicewheel-text p, .how-spicewheel .how-spicewheel-text h2 {
       text-align: right;
