@@ -23,10 +23,18 @@
     display:flex;
     flex-direction: column;
     padding-right: 10vw;
+    .react-logo{
+      display: flex;
+      img {
+        width:15vw;
+        height:15vw;
+      }
+    }
   }
   .header-logo{
     img{
       margin-top: 3vw;
+      margin-right:1vw;
       width:20vw;
       height:20vw;
 
