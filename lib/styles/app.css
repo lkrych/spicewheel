@@ -125,6 +125,9 @@
     cursor: pointer; }
   .e-commerce-wrapper .basic-img-grid img {
     object-fit: cover; }
+body {
+  font-family: 'Roboto', sans-serif; }
+
 .jumbotron {
   color: white;
   margin-bottom: 0; }
@@ -132,9 +135,10 @@
 #header-img {
   background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496167434/peppers1.jpg"); }
   #header-img h1 {
-    font-size: 120px; }
+    font-size: 120px;
+    font-weight: bold; }
   #header-img p {
-    font-size: 60px; }
+    font-size: 50px; }
 
 #middle-img {
   background-image: url("https://res.cloudinary.com/heab4q3lg/image/upload/v1496282832/peppers3.jpg");
@@ -164,16 +168,23 @@
 .why-spicewheel {
   display: flex;
   padding: 5vw;
-  flex-direction: column;
   background-color: #DE6558; }
+  .why-spicewheel .why-spicewheel-text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10vw; }
   .why-spicewheel p, .why-spicewheel h2 {
-    padding-left: 10vw;
+    padding-left: 5vw;
     color: white;
-    width: 50vw; }
+    width: 40vw; }
   .why-spicewheel h2 {
     font-size: 40px; }
   .why-spicewheel p {
     font-size: 20px; }
+  .why-spicewheel img {
+    height: 24vw;
+    width: 45vw;
+    padding-right: 3vw; }
 
 .how-spicewheel {
   display: flex;
