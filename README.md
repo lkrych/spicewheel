@@ -82,16 +82,52 @@ class GenericGrid extends React.Component {
 }
 
 ```
+The SpiceWheel function takes each individual row and converts the data in the rows into list items. While it is doing this, it is injecting CSS into the classes of the list components.  The end result looks something like this.
 
+```
+<ul class="style-ul">
+  <li class="style-li">
+    <img src="Image" class="style-img">
+    <p class="style-p">Label</p>
+  </li
+  <li class="style-li">
+    <img src="Image" class="style-img">
+    <p class="style-p">Label</p>
+  </li
+  <li class="style-li">
+    <img src="Image" class="style-img">
+    <p class="style-p">Label</p>
+  </li
+</ul>
+```
 ### How can I contribute?
 
-I'm glad you asked...
+I'm glad you asked, SpiceWheel derives its power from injecting Sass modules into the resulting list. These modules are easy to construct, and are incredibly flexible. A basic module looks like the Sass below.
+
+```
+.basic-wrapper {
+  margin: 0;
+  .basic-img-grid {
+    li {
+      display: inline-block;
+      overflow: hidden;
+      margin-bottom: 1vw;
+      font-family: 'Open Sans', sans-serif;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}
+```
+
+I would love it if you would contribute more styles to the library! Feel free to fork the repo and play around with it. Make some styles and experiment with the power of SpiceWheel. There is a lot to be done and I will be actively contributing to the library for the foreseeable future. I look forward to working with you!
 
 ### Architecture and Technologies
 
 This project will be implemented with the following technologies:
 * JavaScript - React and Vanilla.
-* CSS - Will heavily lean on Twitter Bootstrap.
+* CSS3
 * HTML - For transcribing a SpiceRack into a SpiceWheel.
 
 ### Implementation Schedule
@@ -112,10 +148,10 @@ Day 5 (Fri 2): Research how to submit SpiceWheel to npm.
 
 ### Bonus features
 
-1. Support more libraries than Bootstrap (Ex: Foundation, Gridly)
-2. Add more styles to the basic library
-3. Deploy the library to npm so that other developers can use it!
-4. Support JSON usage instead of SpiceRack usage.
+
+1. Add more styles to the basic library
+2. Deploy the library to npm so that other developers can use it!
+3. Support JSON usage instead of SpiceRack usage.
 
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 <div>By Facebook - facebook.github.io/react, Public Domain, https://en.wikipedia.org/w/index.php?curid=52974893</div>
