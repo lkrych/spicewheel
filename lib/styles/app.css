@@ -246,9 +246,6 @@ body {
   .how-spicewheel .spicewheel-example-group {
     display: flex;
     flex-direction: column; }
-    .how-spicewheel .spicewheel-example-group #spicewheel-example p {
-      color: white;
-      font-size: 20px; }
     .how-spicewheel .spicewheel-example-group #spicewheel-example ul {
       padding-top: 2vw;
       width: 45vw; }
