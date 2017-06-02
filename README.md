@@ -102,7 +102,7 @@ The SpiceWheel function takes each individual row and converts the data in the r
 ```
 ### How can I contribute?
 
-I'm glad you asked, SpiceWheel derives its power from injecting Sass modules into the resulting list. These modules are easy to construct, and are incredibly flexible. A basic module looks like the Sass below.
+I'm glad you asked, SpiceWheel derives its power from injecting Sass modules into the resulting list. These modules are easy to construct, and are incredibly flexible. A basic module looks like this:
 
 ```
 .basic-wrapper {
