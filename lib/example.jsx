@@ -148,6 +148,7 @@ class GenericGrid extends React.Component {
                 "${this.state.style}",
                 ${this.state.imagesPerRow})`}
             </p>
+            <span className="spice-function-separator"> </span>
             <h3>SpiceRack aka HTML table </h3>
             {SpiceRack}
           </div>

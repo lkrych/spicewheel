@@ -271,6 +271,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .demo .demo-table-and-function .spice-function-separator {
+      border-bottom: 1px grey solid;
+      width: 100%; }
     .demo .demo-table-and-function .spicerack {
       background-color: #DE6558;
       color: white;

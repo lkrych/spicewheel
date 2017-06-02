@@ -10101,6 +10101,11 @@ var GenericGrid = function (_React$Component) {
               'spiceWheel(SpiceRack,\n                "' + this.state.style + '",\n                ' + this.state.imagesPerRow + ')'
             ),
             _react2.default.createElement(
+              'span',
+              { className: 'spice-function-separator' },
+              ' '
+            ),
+            _react2.default.createElement(
               'h3',
               null,
               'SpiceRack aka HTML table '
