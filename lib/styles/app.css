@@ -212,7 +212,7 @@ body {
 
 .how-spicewheel {
   display: flex;
-  padding: 1vw;
+  padding: 2vw;
   background-color: #DE6558; }
   .how-spicewheel p, .how-spicewheel h2 {
     text-align: right;
@@ -236,6 +236,9 @@ body {
   .how-spicewheel .spicewheel-example-group {
     display: flex;
     flex-direction: column; }
+    .how-spicewheel .spicewheel-example-group .spicewheel-example-text {
+      font-size: 18px;
+      text-align: center; }
     .how-spicewheel .spicewheel-example-group #spicewheel-example ul {
       padding-top: 2vw;
       width: 45vw; }
@@ -252,9 +255,14 @@ body {
     flex-direction: column;
     width: 30vw;
     padding-left: 2vw; }
-    .demo .demo-text .edit-spice-form {
+    .demo .demo-text .edit-spicerack-form {
       display: flex;
       flex-direction: column; }
+      .demo .demo-text .edit-spicerack-form select:hover {
+        cursor: pointer; }
+      .demo .demo-text .edit-spicerack-form .spice-button {
+        background: #DE6558;
+        color: white; }
   .demo .demo-table-and-function {
     display: flex;
     flex-direction: column;
@@ -262,13 +270,23 @@ body {
     .demo .demo-table-and-function .spicerack {
       background-color: #DE6558;
       color: white;
-      padding-left: 3vw; }
+      padding-left: 3vw;
+      padding: 1vw; }
+      .demo .demo-table-and-function .spicerack th {
+        font-size: 18px;
+        border-bottom: 1px solid white; }
     .demo .demo-table-and-function .spice-function-title {
       margin-bottom: 0.5vw; }
     .demo .demo-table-and-function .spice-function {
       font-family: 'Roboto', sans-serif;
       font-size: 32px;
-      font-weight: 800; }
+      font-weight: 800;
+      -webkit-transition: font-size 2s;
+      -moz-transition: font-size 2s;
+      -o-transition: font-size 2s;
+      transition: font-size 2s; }
+    .demo .demo-table-and-function .spice-function-active {
+      font-size: 36px; }
 
 @keyframes spin {
   0% {

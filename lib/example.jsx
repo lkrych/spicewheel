@@ -44,7 +44,7 @@ class GenericGrid extends React.Component {
         sampleJSON: fetchJSON(parseInt(value))
       });
     } else {
-
+      $('.spice-function').toggleClass('spice-function-active');
       this.setState({
         [name]: value
       });
@@ -136,7 +136,7 @@ class GenericGrid extends React.Component {
               </select>
               <br></br>
 
-              <button className="btn btn-primary">Spice up this table</button>
+              <button className="spice-button">Spice up this table</button>
               <span></span>
             </form>
           </div>

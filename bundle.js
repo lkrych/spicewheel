@@ -9876,7 +9876,7 @@ var GenericGrid = function (_React$Component) {
 
         this.setState((_setState = {}, _defineProperty(_setState, name, value), _defineProperty(_setState, 'sampleJSON', (0, _example_util.fetchJSON)(parseInt(value))), _setState));
       } else {
-
+        $('.spice-function').toggleClass('spice-function-active');
         this.setState(_defineProperty({}, name, value));
       }
     }
@@ -10076,7 +10076,7 @@ var GenericGrid = function (_React$Component) {
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'button',
-                { className: 'btn btn-primary' },
+                { className: 'spice-button' },
                 'Spice up this table'
               ),
               _react2.default.createElement('span', null)

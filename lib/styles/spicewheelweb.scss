@@ -114,7 +114,7 @@ body {
 
 .how-spicewheel{
   display: flex;
-  padding: 1vw;
+  padding: 2vw;
   background-color: #DE6558;
   p, h2{
     text-align: right;
@@ -143,7 +143,10 @@ body {
   .spicewheel-example-group {
     display: flex;
     flex-direction: column;
-
+    .spicewheel-example-text{
+      font-size: 18px;
+      text-align: center;
+    }
     #spicewheel-example{
       ul {
         padding-top: 2vw;
@@ -168,9 +171,16 @@ body {
     flex-direction: column;
     width: 30vw;
     padding-left: 2vw;
-    .edit-spice-form{
+    .edit-spicerack-form{
       display: flex;
       flex-direction: column;
+      select:hover {
+        cursor: pointer;
+      }
+      .spice-button{
+        background: #DE6558;
+        color: white;
+      }
     }
   }
   .demo-table-and-function{
@@ -178,10 +188,16 @@ body {
     flex-direction: column;
     align-items: center;
 
+
     .spicerack {
       background-color: #DE6558;
       color: white;
       padding-left: 3vw;
+      padding: 1vw;
+      th {
+        font-size: 18px;
+        border-bottom: 1px solid white;
+      }
     }
     .spice-function-title {
       margin-bottom: 0.5vw;
@@ -190,6 +206,13 @@ body {
       font-family: 'Roboto', sans-serif;
       font-size: 32px;
       font-weight:800;
+      -webkit-transition:  font-size 2s;
+      -moz-transition: font-size 2s;
+      -o-transition: font-size 2s;
+      transition: font-size 2s;
+    }
+    .spice-function-active{
+      font-size: 36px;
     }
   }
 }
