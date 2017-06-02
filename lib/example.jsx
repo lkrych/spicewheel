@@ -141,7 +141,7 @@ class GenericGrid extends React.Component {
             </form>
           </div>
           <div className="demo-table-and-function">
-            <h3 className="spice-function-title">SpiceWheel function </h3>
+            <h3 className="spice-function-title">SpiceWheel function visualizer </h3>
             <p>This is the code you need to put in your React component!</p>
             <p className="spice-function">
               {`spiceWheel(SpiceRack,

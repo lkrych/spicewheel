@@ -228,6 +228,9 @@ body {
     text-align: right;
     margin-left: 5vw;
     width: 45vw; }
+    .how-spicewheel .how-spicewheel-text .github-logo {
+      height: 8vh;
+      width: 8vw; }
     .how-spicewheel .how-spicewheel-text .how-spicewheel-span {
       margin-top: 3vh;
       margin-bottom: 3vh;
@@ -262,7 +265,8 @@ body {
         cursor: pointer; }
       .demo .demo-text .edit-spicerack-form .spice-button {
         background: #DE6558;
-        color: white; }
+        color: white;
+        margin-bottom: 2vh; }
   .demo .demo-table-and-function {
     display: flex;
     flex-direction: column;

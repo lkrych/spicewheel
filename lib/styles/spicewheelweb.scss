@@ -133,6 +133,10 @@ body {
     text-align: right;
     margin-left: 5vw;
     width:45vw;
+    .github-logo {
+      height: 8vh;
+      width: 8vw;
+    }
     .how-spicewheel-span{
       margin-top:3vh;
       margin-bottom:3vh;
@@ -180,6 +184,7 @@ body {
       .spice-button{
         background: #DE6558;
         color: white;
+        margin-bottom: 2vh;
       }
     }
   }

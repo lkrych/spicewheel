@@ -10088,7 +10088,7 @@ var GenericGrid = function (_React$Component) {
             _react2.default.createElement(
               'h3',
               { className: 'spice-function-title' },
-              'SpiceWheel function '
+              'SpiceWheel function visualizer '
             ),
             _react2.default.createElement(
               'p',

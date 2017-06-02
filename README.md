@@ -83,6 +83,10 @@ class GenericGrid extends React.Component {
 
 ```
 
+### How can I contribute?
+
+I'm glad you asked...
+
 ### Architecture and Technologies
 
 This project will be implemented with the following technologies:
