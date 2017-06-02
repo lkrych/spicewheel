@@ -156,24 +156,14 @@ body {
   .middle-jumbo .take-me-to-demo-button {
     font: 'Lato' white;
     font-size: 32px;
+    margin-top: 3vw;
+    margin-left: 35vw;
+    margin-right: 35vw;
     background-color: Transparent;
-    margin-top: 34vh;
-    margin-left: 40vw;
-    border-color: #ffffff;
-    position: absolute;
-    border-width: 1px;
     outline: none;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important; }
-  .middle-jumbo .take-me-to-demo-button::after {
-    background: #ffffff;
-    content: '';
-    height: 21.5vh;
-    left: 50%;
-    position: absolute;
-    top: 100%;
-    width: 1px; }
 
 .header {
   display: flex; }
