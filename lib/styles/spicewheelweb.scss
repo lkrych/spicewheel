@@ -199,9 +199,14 @@ body {
       color: white;
       padding-left: 3vw;
       padding: 1vw;
+      margin-bottom: 2vh;
       th {
         font-size: 18px;
         border-bottom: 1px solid white;
+        padding: 0.5vw;
+      }
+      td {
+        padding: 0.5vw;
       }
     }
     .spice-function-title {
