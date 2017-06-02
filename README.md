@@ -6,6 +6,8 @@
 
 Responsive image-grids are a common feature in web applications. SpiceWheel makes it easy to rapidly prototype these components. Here are some examples of image grids from Pinterest, Amazon, Unsplash and Banana Republic.
 
+[Check out the demo page!](https://lkrych.github.io/spicewheel/)
+
 ### Example Image Grids
 
 
