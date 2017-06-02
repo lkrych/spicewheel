@@ -30,7 +30,10 @@ class GenericGrid extends React.Component {
 
   handleSubmit(e){
     e.preventDefault();
-    this.setState({formSubmitted: true});
+    $('.spice-function').toggleClass('spice-function-submit');
+    $('.spice-function').toggleClass('spicerack-submit');
+    setTimeout(this.setState({formSubmitted: true}),
+      2000);
   }
 
   handleSelectInput(event){
@@ -83,10 +86,13 @@ class GenericGrid extends React.Component {
     if (this.state.formSubmitted){
       return (
         <div className="new-spicewheel">
-          <h2>Your new SpiceWheel</h2>
-          <p>rendered with the {this.state.style} template!</p>
+          <div className="new-spicewheel-text">
+            <h2>Your new SpiceWheel</h2>
+            <p>rendered with the {this.state.style} template!</p>
+            <a onClick={this.resetForm}><p>Create another SpiceWheel</p></a>
+          </div>
           {SpiceWheel}
-          <a onClick={this.resetForm}><p>Create another SpiceWheel</p></a>
+
         </div>
       );
     } else {

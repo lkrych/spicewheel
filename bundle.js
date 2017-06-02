@@ -9862,7 +9862,9 @@ var GenericGrid = function (_React$Component) {
     key: 'handleSubmit',
     value: function handleSubmit(e) {
       e.preventDefault();
-      this.setState({ formSubmitted: true });
+      $('.spice-function').toggleClass('spice-function-submit');
+      $('.spice-function').toggleClass('spicerack-submit');
+      setTimeout(this.setState({ formSubmitted: true }), 2000);
     }
   }, {
     key: 'handleSelectInput',
@@ -9940,27 +9942,31 @@ var GenericGrid = function (_React$Component) {
           'div',
           { className: 'new-spicewheel' },
           _react2.default.createElement(
-            'h2',
-            null,
-            'Your new SpiceWheel'
-          ),
-          _react2.default.createElement(
-            'p',
-            null,
-            'rendered with the ',
-            this.state.style,
-            ' template!'
-          ),
-          SpiceWheel,
-          _react2.default.createElement(
-            'a',
-            { onClick: this.resetForm },
+            'div',
+            { className: 'new-spicewheel-text' },
+            _react2.default.createElement(
+              'h2',
+              null,
+              'Your new SpiceWheel'
+            ),
             _react2.default.createElement(
               'p',
               null,
-              'Create another SpiceWheel'
+              'rendered with the ',
+              this.state.style,
+              ' template!'
+            ),
+            _react2.default.createElement(
+              'a',
+              { onClick: this.resetForm },
+              _react2.default.createElement(
+                'p',
+                null,
+                'Create another SpiceWheel'
+              )
             )
-          )
+          ),
+          SpiceWheel
         );
       } else {
         return _react2.default.createElement(
