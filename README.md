@@ -74,7 +74,7 @@ class GenericGrid extends React.Component {
           {tableRows}
         </tbody>
       </table>;
-      
+
     return(
       spiceWheel(SpiceRack, "modern", 3)
     );
@@ -112,3 +112,6 @@ Day 5 (Fri 2): Research how to submit SpiceWheel to npm.
 2. Add more styles to the basic library
 3. Deploy the library to npm so that other developers can use it!
 4. Support JSON usage instead of SpiceRack usage.
+
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+<div>By Facebook - facebook.github.io/react, Public Domain, https://en.wikipedia.org/w/index.php?curid=52974893</div>
