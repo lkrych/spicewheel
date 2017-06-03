@@ -351,4 +351,14 @@ body {
   100% {
     -o-transform: rotate(0deg); } }
 
+button {
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+button:hover {
+  border-radius: 2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+}
+
 /*# sourceMappingURL=app.css.map*/
