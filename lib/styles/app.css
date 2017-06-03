@@ -157,8 +157,8 @@ body {
     font: 'Lato' white;
     font-size: 32px;
     margin-top: 3vw;
-    margin-left: 35vw;
-    margin-right: 35vw;
+    margin-left: auto;
+    margin-right: auto;
     background-color: Transparent;
     outline: none;
     -webkit-box-shadow: none !important;
