@@ -159,11 +159,9 @@ body {
     margin-top: 3vw;
     margin-left: 35vw;
     margin-right: 35vw;
-    background-color: Transparent;
+    background-color: rgba(100,100,100,0.6);
     outline: none;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important; }
+  }
 
 .header {
   display: flex; }
@@ -352,13 +350,15 @@ body {
     -o-transform: rotate(0deg); } }
 
 button {
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  border-radius: 2px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15) !important;
+  border: none !important;
 }
 
 button:hover {
-  border-radius: 2px;
-  box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+  border-radius: 2px !important;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.4) !important;
+  border: none !important;
 }
 
 /*# sourceMappingURL=app.css.map*/
