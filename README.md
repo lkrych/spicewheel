@@ -45,7 +45,7 @@ The purpose is two-fold. The first is that we want to make sure that the develop
 
 ### SpiceWheel example
 
-```
+```jsx
 import React from 'react';
 import {spiceWheel} from 'spice-wheel';
 
@@ -86,7 +86,7 @@ class GenericGrid extends React.Component {
 ```
 The SpiceWheel function takes each individual row and converts the data in the rows into list items. While it is doing this, it is injecting CSS into the classes of the list components.  The end result looks something like this.
 
-```
+```html
 <ul class="style-ul">
   <li class="style-li">
     <img src="Image" class="style-img">
@@ -106,7 +106,7 @@ The SpiceWheel function takes each individual row and converts the data in the r
 
 I'm glad you asked, SpiceWheel derives its power from injecting Sass modules into the resulting list. These modules are easy to construct, and are incredibly flexible. A basic module looks like this:
 
-```
+```less
 .basic-wrapper {
   margin: 0;
   .basic-img-grid {
