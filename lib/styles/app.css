@@ -152,14 +152,15 @@ body {
 
 .middle-jumbo {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .middle-jumbo .take-me-to-demo-button {
     font: 'Lato' white;
     font-size: 32px;
     margin-top: 3vw;
-    margin-left: 35vw;
-    margin-right: 35vw;
+    width: 100px;
     background-color: Transparent;
+    border-radius: 5px;
     outline: none;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
@@ -273,6 +274,7 @@ body {
       .demo .demo-text .edit-spicerack-form .spice-button {
         background: #DE6558;
         color: white;
+        border-radius: 5px;
         margin-bottom: 2vh; }
   .demo .demo-table-and-function {
     display: flex;
