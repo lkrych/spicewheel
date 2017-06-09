@@ -126,28 +126,6 @@ I'm glad you asked, SpiceWheel derives its power from injecting Sass modules int
 
 I would love it if you would contribute more styles to the library! Feel free to fork the repo and play around with it. Make some styles and experiment with the power of SpiceWheel. There is a lot to be done and I will be actively contributing to the library for the foreseeable future. I look forward to working with you!
 
-### Architecture and Technologies
-
-This project will be implemented with the following technologies:
-* JavaScript - React and Vanilla.
-* CSS3
-* HTML - For transcribing a SpiceRack into a SpiceWheel.
-
-### Implementation Schedule
-
-Day 1 (Mon 29): Finish proof-of-concept demo. Transform an html table into a responsive grid.
-  * Write SpiceWheel function: To convert an html table I will access React Component properties.
-  * Write Simple SpiceWheel stylesheet: Will style the new html elements to be responsive grid.  Grid will be unordered list that uses bootstrap/or simply vw units in CSS.
-
-Day 2 (Tue 30): Research and collect CSS styles to add to basic library. Start setting up SpiceWheel website.
-  * Focus on e-commerce example. Start setting up front-end site that demonstrates the functionality of spice-wheel.
-
-Day 3 (Wed 31): Keep working on SpiceWheel website
-  * Make sure that all the relevant information is presented on the SpiceWheel site.
-
-Day 4 (Thu 1): Create a couple of demos using the new styles collected on Tuesday and Wednesday Present them on the site. As proof of product, rewrite table in FullStack project using SpiceWheel 😱
-
-Day 5 (Fri 2): Research how to submit SpiceWheel to npm.
 
 ### Bonus features
 
