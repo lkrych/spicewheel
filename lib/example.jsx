@@ -103,7 +103,7 @@ class GenericGrid extends React.Component {
             <p>
               Welcome to the SpiceWheel demo, choose the number of images you
               want in your grid, your style and the number of images you want
-              in your row.
+              per row.
             </p>
 
             <form onSubmit={this.handleSubmit} className="edit-spicerack-form">
