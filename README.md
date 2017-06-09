@@ -6,7 +6,7 @@
 
 Responsive image grids are a common feature in web applications. SpiceWheel makes it easy to rapidly prototype these components. Here are some examples of image grids from Pinterest, Amazon, Unsplash and Banana Republic.
 
-[Check out the demo page!](https://lkrych.github.io/spicewheel/) We're sorry but our site is down right now. It will be up soon!
+[Check out the demo page!](https://lkrych.github.io/spicewheel/)
 ![Image of demo page](https://res.cloudinary.com/heab4q3lg/image/upload/v1496611597/Spicewheel-splash.png)
 
 ### Example Image Grids
@@ -30,19 +30,14 @@ Responsive image grids are a common feature in web applications. SpiceWheel make
 
 SpiceWheel is an opinionated library. If you want to use it, you need to do something that no modern front-end web developer has ever done, use HTML tables. At SpiceWheel, we prefer to call these beautiful relics SpiceRacks.
 
-Each row in a SpiceRack has information about an individual grid element. For SpiceWheel to interpret the SpiceRack correctly, the SpiceRack will need one column to hold the image that will be displayed (or an image URL), a label for the image, and optionally, additional information about the element.
+Each row in a SpiceRack has information about an individual grid element. For SpiceWheel to interpret the SpiceRack correctly, the SpiceRack will need one column to hold the image that will be displayed (or an image URL), and a label for the image.
 
 ![SpiceRack](https://res.cloudinary.com/heab4q3lg/image/upload/v1496085498/spicerack.png)
 * despite the trendy name, SpiceRacks are just HTML tables.
 
-Once the SpiceRack has been created, the developer can test to see if the spice rack looks like it is supposed to (in case, for instance you are dynamically creating the table by reading an array of JSON and you've formatted the JSON incorrectly) by displaying the raw HTML table in the browser.
-
-After verifying that the SpiceRack has been set up correctly, the developer can then use the spiceWheel function to turn the SpiceRack into a beautiful grid, or as we like to call it, a SpiceWheel.
-
-
 ### Why are you insisting that we use this silly fossil of HTML?
 
-The purpose is two-fold. The first is that we want to make sure that the developer that is using SpiceWheel has set up their JSON in the proper format. SpiceWheel won't work if you've inputted the data into the SpiceRack incorrectly. Laying your information out in a SpiceRack ensures that you have checked that you are serving your backend information correctly. In the future we will support inputting raw JSON into the SpiceWheel, but right now, we like using SpiceRacks because they ensure consistency and because we want to make HTML tables feel like they are less alone in the world.
+The purpose is two-fold. The first is that we want to make sure that you have set up your JSON properly. SpiceWheel won't work if you've inputted the data into the SpiceRack incorrectly. Laying your information out in a SpiceRack ensures that you have checked that you are serving your backend information correctly. In the future we will support inputting raw JSON into the SpiceWheel, but right now, we like using SpiceRacks because they ensure consistency and because we want to make HTML tables feel like they are less alone in the world.
 
 ### SpiceWheel example
 
@@ -124,7 +119,7 @@ I'm glad you asked, SpiceWheel derives its power from injecting Sass modules int
 }
 ```
 
-I would love it if you would contribute more styles to the library! Feel free to fork the repo and play around with it. Make some styles and experiment with the power of SpiceWheel. There is a lot to be done and I will be actively contributing to the library for the foreseeable future. I look forward to working with you!
+We would love it if you could contribute more styles to the library! Feel free to fork the repo and play around with it. Make some styles and experiment with the power of SpiceWheel. There is a lot to be done and we will be actively contributing to the library for the foreseeable future. 
 
 
 ### Bonus features
